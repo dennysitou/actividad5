@@ -25,7 +25,9 @@ while True:
         case "2":
             print(f"Ventas ingresadas: {ventas}")
         case "3":
-            print("Venta mas alta: ")
+            #print("Venta mas alta: ")
+            for j in ventas:
+
         case "4":
             print("Promedio de ventas: ")
         case "5":
