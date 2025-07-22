@@ -11,11 +11,17 @@ while True:
 
     opcion = input("Seleccione una opcion del menu: ")
     ventas = []
+    sumaventas = 0
+    promventas = 0
+    contdias = 0
+
 
     match opcion:
         case "1":
-            venta = int(input("Ingresar venta: "))
-            ventas.append(venta)
+            veces = int(input("Ingrese cuantas ventas quiere ingresar: "))
+            for i in range(0, veces):
+                venta = int(input("Ingrese venta: "))
+                ventas.append(venta)
         case "2":
             print(f"Ventas ingresadas: {ventas}")
         case "3":
@@ -28,3 +34,8 @@ while True:
             print("Buscar venta especifica: ")
         case "7":
             print("Calcular cada venta")
+        case "8":
+            print("Saliendo......")
+            break
+        case _:
+            print("Opcion invalida, vuelva a intentarlo")
